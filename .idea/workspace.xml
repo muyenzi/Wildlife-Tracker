@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e267e853-5bcb-4cda-8b9d-bb673715d429" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/java/models/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/java/models/Squad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/resources/templates/form.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/resources/templates/layout.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/test/java/models/HeroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/test/java/models/SquadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/src/main/resources/db/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todolist/src/main/resources/db/drop.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/Community.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/FireMonster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/main/java/WaterMonster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/CommunityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/DatabaseRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/FireMonsterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/MonsterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/WaterMonsterTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R7eHh2pQClmnb29S4jJPdQ36XW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e267e853-5bcb-4cda-8b9d-bb673715d429" name="Default Changelist" comment="" />
+      <created>1569022475194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569022475194</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
