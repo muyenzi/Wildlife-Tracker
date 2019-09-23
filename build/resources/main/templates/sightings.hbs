@@ -1,0 +1,12 @@
+{{#partial "content"}}
+    {{if sightings}}
+    {{#each sightings }}
+
+        {{animalId}}
+        {{location}}
+        {{rangerName}}
+
+    {{/each}}
+{{else}}
+{{/partial}}
+{{>layout.hbs}}
