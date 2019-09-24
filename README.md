@@ -47,5 +47,12 @@ an application that allows Rangers to track wildlife sightings in the area.
 * HTML
 * CSS
 
+### INSTALLATION
+
+* Install IntelJ
+* Create a new Gradle project
+* Open the terminal to run
+
+
 
   
