@@ -36,5 +36,11 @@ an application that allows Rangers to track wildlife sightings in the area.
 * Each time an animal species of either category is seen, a Sighting must be reported
 * When wildlife is spotted, a Ranger submits a form to record a Sighting
 
+#### Output 
+
+* users may see all Rangers, and click each to see which Sightings they've reported.
+
+
+
 
   
