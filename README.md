@@ -22,3 +22,8 @@
 
 an application that allows Rangers to track wildlife sightings in the area.
 
+### SETUP INSTALLATION REQUIRED
+
+* UBUNTU 
+* IntelJ 
+* GOOGLE CHROME
