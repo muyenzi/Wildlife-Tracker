@@ -2,13 +2,14 @@ import org.sql2o.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Animal {
+public abstract class Animal {
     public String name;
-    private int id;
+    public int id;
+    public boolean  endangered;
 
-    public Animal(String name) {
-        this.name = name;
-    }
+//    public Animal(String name) {
+//        this.name = name;
+//    }
 
     public String getName() {
         return name;
@@ -26,18 +27,22 @@ public class Animal {
     }
 
     public void save() {
+        if (name.equals("") ) {
+            throw new IllegalArgumentException("Please enter a name.");
+        }
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name) VALUES (:name)";
+            String sql = "INSERT INTO animals (name,endangered) VALUES (:name,:endangered)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
+                    .addParameter( "endangered",this.endangered)
                     .executeUpdate()
                     .getKey();
         }
     }
-    public static List<Animal> all() {
-        String sql = "SELECT * FROM animals;";
-        try (Connection con = DB.sql2o.open()) {
-            return con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(Animal.class);
-        }
-    }
+//    public static List<Animal> all() {
+//        String sql = "SELECT * FROM animals;";
+//        try (Connection con = DB.sql2o.open()) {
+//            return con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(Animal.class);
+//        }
+//    }
 }

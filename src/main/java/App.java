@@ -24,10 +24,24 @@ public class App {
         post("/new-animal", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name=request.queryParams("animalName");
-            Animal newAnimal= new Animal(name);
-            newAnimal.save();
-            model.put("name",newAnimal.getName());
-            model.put("Animal",newAnimal);
+            boolean endangered = request.queryParamsValues("endangered") != null;
+               if(endangered) {
+                   String health = request.queryParams("health");
+                   String age = request.queryParams("age");
+                   EndangeredAnimal endangeredAnimal = new EndangeredAnimal(name, health, age);
+                   endangeredAnimal.save();
+               }
+               else {
+                   EndangeredAnimal endangeredAnimal= new EndangeredAnimal(name,null,null);
+                   endangeredAnimal.save();
+               }
+//            } else {
+//                NonEndangered notEndangered = new NonEndangered(name);
+//                notEndangered.save();
+//            }
+//            newAnimal.save();
+//            model.put("name",newAnimal.getName());
+//            model.put("Animal",newAnimal);
             return new ModelAndView(model, "new-animal.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -35,8 +49,8 @@ public class App {
           // list all animals
         get("/animals", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            List<Animal> animals = Animal.all();
-            model.put("animals", animals);
+            List<EndangeredAnimal> endangeredAnimals = EndangeredAnimal.all();
+            model.put("animals", endangeredAnimals);
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
 

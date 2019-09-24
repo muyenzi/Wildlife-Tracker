@@ -1,5 +1,12 @@
 {{#partial "content"}}
-
+{{if endangered}}
+{{# each endangered}}
 {{name}}
+    {{health}}
+    {{age}}
+{{/each}}
+{{else}}
+
+
 {{/partial}}
 {{>layout.hbs}}

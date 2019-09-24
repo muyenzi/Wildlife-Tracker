@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col col-sm-6 form-left">
-        <h3>Add Animal</h3>
+
         <br/>
         <form action="/new-animal" method="post" >
             <div class="form-group">
@@ -10,26 +10,28 @@
                 <input class="form-control" type="text" id="animalName" name="animalName" placeholder="Animal Name"/>
             </div>
 
-<!--            <input type="checkbox" name="endangered" value="yes"/>-->
-<!--            <label for="endangered">Is the Species Endangered?</label>-->
+            <input type="checkbox" name="endangered" value="yes"/>
+            <label for="endangered">Is the Species Endangered?</label>
 
-<!--            <div class="form-group">-->
-<!--                <label for="health">Health</label>-->
-<!--                <select class="form-control" name="health">-->
-<!--                    <option>HEALTHY</option>-->
-<!--                    <option>OKAY</option>-->
-<!--                    <option>ILL</option>-->
-<!--                </select>-->
-<!--            </div>-->
+            <div class="form-group">
+                <label for="health">Health</label>
+                <select class="form-control" name="health">
+                    <option></option>
+                    <option>Health</option>
+                    <option>Okay</option>
+                    <option>Ill</option>
+                </select>
+            </div>
 
-<!--            <div class="form-group">-->
-<!--                <label for="age">Age</label>-->
-<!--                <select class="form-control" name="age">-->
-<!--                    <option>NEWBORN</option>-->
-<!--                    <option>YOUNG</option>-->
-<!--                    <option>ADULT</option>-->
-<!--                </select>-->
-<!--            </div>-->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <select class="form-control" name="age">
+                    <option></option>
+                    <option>Newborn</option>
+                    <option>Young</option>
+                    <option>Adult</option>
+                </select>
+            </div>
 
             <button type="submit" class="btn btn-primary">Add Animal</button>
         </form>
