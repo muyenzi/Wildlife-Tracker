@@ -10,23 +10,6 @@
       <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/main/resources/templates/layout.hbs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/test/java/models/HeroTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Hero-Squad/src/test/java/models/SquadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseRule.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../todolist/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../todolist/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../todolist/.idea/misc.xml" afterDir="false" />
@@ -49,37 +32,7 @@
       <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/MonsterTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/PersonTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../virtual-pets/src/test/java/WaterMonsterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EndangeredAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EndangeredAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Sightings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Sightings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/animal-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/animal-form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/animals.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/animals.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-animal.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-animal.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-sighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-sighting.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/sightings.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sightings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sightings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/animal-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/animal-form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/animals.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/animals.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-animal.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-animal.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-sighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-sighting.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sightings.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
