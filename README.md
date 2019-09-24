@@ -63,4 +63,9 @@ For support contact us:
 * Slack:Muyenziraissa.
 
 
+### LICENSE
+
+MIT Copyright (c) [2019][Raissa Muyenzi].
+
+
   
