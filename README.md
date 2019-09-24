@@ -41,6 +41,11 @@ an application that allows Rangers to track wildlife sightings in the area.
 * users may see all Rangers, and click each to see which Sightings they've reported.
 
 
+### TECHNOLOGIES USED
+
+* Java 
+* HTML
+* CSS
 
 
   
