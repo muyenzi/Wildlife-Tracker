@@ -53,6 +53,14 @@ an application that allows Rangers to track wildlife sightings in the area.
 * Create a new Gradle project
 * Open the terminal to run
 
+### CONTACTS
+
+For support contact us:
+
+* Email:muyenziraissa@gmail.com
+* Phone.Nbr:+250789719424
+* Twitter:@raissa_
+* Slack:Muyenziraissa.
 
 
   
