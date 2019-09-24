@@ -27,3 +27,14 @@ an application that allows Rangers to track wildlife sightings in the area.
 * UBUNTU 
 * IntelJ 
 * GOOGLE CHROME
+
+### BDD
+
+#### Input 
+
+* Rangers must record additional information about EndangeredAnimal
+* Each time an animal species of either category is seen, a Sighting must be reported
+* When wildlife is spotted, a Ranger submits a form to record a Sighting
+
+
+  
