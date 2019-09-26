@@ -6,14 +6,16 @@ import java.util.List;
 public class Sightings {
     public int id;
     public int animalId;
+    public String animalName;
     public String location;
     public  String rangerName;
     private Timestamp spotted;
 
-    public  Sightings(int animalId,String location,String rangerName){
-        this.animalId=animalId;
+    public  Sightings(String animalName,String location,String rangerName){
+        this.animalName=animalName;
         this.location=location;
         this.rangerName=rangerName;
+        this.spotted=spotted;
 
     }
 
@@ -29,14 +31,17 @@ public class Sightings {
         return rangerName;
     }
 
+    public String getAnimalName() {
+        return animalName;
+    }
 
     public Timestamp getSpotted() {
         return spotted;
     }
 
-    public String getFormattedDate() {
-        return DateFormat.getDateTimeInstance().format(spotted);
-    }
+//    public String getFormattedDate() {
+//        return DateFormat.getDateTimeInstance().format(spotted);
+//    }
 
     @Override
     public boolean equals(Object otherSighting) {
@@ -51,9 +56,9 @@ public class Sightings {
 
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO sightings (animalId,location,rangerName,spotted) VALUES (:animalId,:location,:rangerName,now())";
+            String sql = "INSERT INTO sightings (animalName,location,rangerName,spotted) VALUES (:animalName,:location,:rangerName,now())";
             this.id = (int) con.createQuery(sql, true)
-                    .addParameter("animalId", this.animalId)
+                    .addParameter("animalName", this.animalName)
                     .addParameter("location", this.location)
                     .addParameter("rangerName", this.rangerName)
                     .executeUpdate()

@@ -8,20 +8,24 @@ import static spark.Spark.*;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
-
-
 public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
 
-           //animal form
+           //welcome page
         get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "index.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        //animal form
+        get("/animal/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "animal-form.hbs");
         }, new HandlebarsTemplateEngine());
 
         //new animal display and save in db
-        post("/new-animal", (request, response) -> {
+        post("/new-animals", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name=request.queryParams("animalName");
             boolean endangered = request.queryParamsValues("endangered") != null;
@@ -35,13 +39,6 @@ public class App {
                    EndangeredAnimal endangeredAnimal= new EndangeredAnimal(name,null,null);
                    endangeredAnimal.save();
                }
-//            } else {
-//                NonEndangered notEndangered = new NonEndangered(name);
-//                notEndangered.save();
-//            }
-//            newAnimal.save();
-//            model.put("name",newAnimal.getName());
-//            model.put("Animal",newAnimal);
             return new ModelAndView(model, "new-animal.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -63,12 +60,12 @@ public class App {
         //new sighting display and save in db
         post("/new-sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            int animalId=Integer.parseInt(request.queryParams("animalId"));
+            String animalName=request.queryParams("animalName");
             String location=request.queryParams("sightLocation");
             String rangerName=request.queryParams("rangerName");
-            Sightings newSightings= new Sightings(animalId,location,rangerName);
+            Sightings newSightings= new Sightings(animalName,location,rangerName);
             newSightings.save();
-            model.put("animalId",newSightings.getAnimalId());
+            model.put("animalName",newSightings.getAnimalName());
             model.put("location",newSightings.getLocation());
             model.put("rangerName",newSightings.getRangerName());
             model.put("Sightings",newSightings);

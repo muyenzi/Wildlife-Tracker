@@ -1,30 +1,51 @@
 {{#partial "content"}}
-
+    <style>
+    body{
+     background-image:url("https://3.bp.blogspot.com/-zXgflgKBw-s/T-lf6ZSpmbI/AAAAAAAABjI/AbepKthPt5I/s1600/Animal%20HD%20Wallpapers.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+    }
+    form {
+    top:50%;
+    color:white;
+    }
+</style>
+    <h2>Report A Sighting</h2><hr>
     <div class="row">
         <div class="col col-sm-6 form-left">
-            <h3>Add Sighting</h3>
             <br/>
             <form action="/new-sighting" method="post" >
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">animal Name</label><br>
+                        <input type="text" class="form-control" name="animalName" aria-describedby="emailHelp" placeholder="animalName">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Sighting Location</label><br>
+                        <select class="mdb-select md-form" name="sightLocation" STYLE="width:100%;height:40px;border-radius:4px">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="Zone 1 ">Zone 1 </option>
+                            <option value="Zone 2 ">Zone 2</option>
+                            <option value="Zone 3">Zone 3 </option>
+                        </select>
+
+
+                    </div>
+
                 <div class="form-group">
-                    <label for="animalId">animal Id</label>
-                    <input class="form-control" type="text" id="animalId" name="animalId" placeholder="animalId"/>
-                </div>
-                <div class="form-group">
-                    <label for="sightLocation">Sighting Location</label>
-                    <input class="form-control" type="text" id="sightLocation" name="sightLocation" placeholder="sighting Location"/>
-                </div>
-                <div class="form-group">
-                    <label for="rangerName">Ranger Name </label>
-                    <input class="form-control" type="text" id="rangerName" name="rangerName" placeholder="rangerName"/>
+                    <label for="exampleInputPassword1">rangerName</label><br>
+                    <input type="text" class="form-control" name="rangerName"  placeholder="rangerName">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Add Sighting</button>
-            </form>
-        </div>
-        <div class="col col-sm-6">
 
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
         </div>
     </div>
+
+
+
 {{/partial}}
 
 {{>layout.hbs}}
