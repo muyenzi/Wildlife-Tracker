@@ -50,7 +50,6 @@ public class Sightings {
         } else {
             Sightings newSighting = (Sightings) otherSighting;
             return this.getAnimalId()==(newSighting.getAnimalId());
-//            return this.getLocation().equals(newSighting.getLocation());
         }
     }
 

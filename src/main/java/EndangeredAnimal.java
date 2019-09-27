@@ -21,7 +21,6 @@ public class EndangeredAnimal  extends Animal {
       endangered = true;
     }
 
-
     @Override
     public void save(){
         super.save();
