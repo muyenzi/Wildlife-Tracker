@@ -8,14 +8,14 @@
     text-align:center;
     }
    </style>
-    {{if sightings}}
-    {{#each sightings }}
+    {{if sight}}
+    {{#each sight }}
         <div class="container">
             <div class="jumbotron" style="background-color:black; opacity:0.7;">
                 <h3>Sightings</h3>
                 <p>AnimalName: {{animalName}}</p>
-                <p>Location : {{location}}</p>
-                 <p>Ranger Name : {{rangerName}}</p>
+                <p>Location : {{sightLocation}}</p>
+                 <p>Ranger Name : {{ranger}}</p>
                 <p>Spotted Time : {{spotted}} </p>
             </div>
         </div>

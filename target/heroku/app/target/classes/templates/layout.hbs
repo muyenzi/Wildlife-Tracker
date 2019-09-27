@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+    {{#block "title"}}
+        <meta charset="utf-8"/>
+{{/block}}
+    <title>Wildlife Track</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel='stylesheet' href='resources/app.css'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+</title>
+<style>
+body {
+ background-image:url("https://i.etsystatic.com/10626013/r/il/324428/1607541135/il_fullxfull.1607541135_7up9.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+text-align:center;
+color:white;
+}
+footer {
+background-color:black;
+text-align:center;
+bottom:0;
+}
+form {
+background-repeat:no-repeat;
+background-size:cover;
+margin-left:75%;
+border-radius:3px;
+color:black;
+width:60%;
+height:50%;
+}
+h1{
+color:black;
+text-align:center;
+}
+</style>
+<body><br>
+<h1>WILDLIFE TRACKER</h1>
+<div class="layback">
+    <nav class="navbar navbar-expand-md navbar-blue bg-blue fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a  href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/animals" class="nav-link">Animals</a></li>
+                    <li class="nav-item"><a href="/animal/new" class="nav-link">Add Animal</a></li>
+                    <li class="nav-item"><a href="/sightings" class="nav-link">Sightings</a></li>
+                    <li class="nav-item"><a href="/new-sighting" class="nav-link">Add Sighting</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
+</div>
+{{#block "content"}}
+
+{{/block}}
+{{#block "footer"}}
+</body>
+</html>
+{{/block}}

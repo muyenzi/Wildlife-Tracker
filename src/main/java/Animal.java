@@ -5,16 +5,11 @@ import java.util.List;
 public abstract class Animal {
     public String name;
     public int id;
-    public boolean  endangered;
-
-//    public Animal(String name) {
-//        this.name = name;
-//    }
+    public boolean  strange;
 
     public String getName() {
         return name;
     }
-
 
     @Override
     public boolean equals(Object otherAnimal) {
@@ -27,22 +22,14 @@ public abstract class Animal {
     }
 
     public void save() {
-        if (name.equals("") ) {
-            throw new IllegalArgumentException("Please enter a name.");
-        }
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name,endangered) VALUES (:name,:endangered)";
+            String sql = "INSERT INTO animals (name,strange) VALUES (:name,:strange)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter( "endangered",this.endangered)
+                    .addParameter( "strange",this.strange)
                     .executeUpdate()
                     .getKey();
         }
     }
-//    public static List<Animal> all() {
-//        String sql = "SELECT * FROM animals;";
-//        try (Connection con = DB.sql2o.open()) {
-//            return con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(Animal.class);
-//        }
-//    }
+
 }

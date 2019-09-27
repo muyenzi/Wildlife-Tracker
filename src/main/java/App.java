@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
 
-           //welcome page
+        //welcome page
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "index.hbs");
@@ -28,26 +28,30 @@ public class App {
         post("/new-animals", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name=request.queryParams("animalName");
-            boolean endangered = request.queryParamsValues("endangered") != null;
-               if(endangered) {
-                   String health = request.queryParams("health");
-                   String age = request.queryParams("age");
-                   EndangeredAnimal endangeredAnimal = new EndangeredAnimal(name, health, age);
-                   endangeredAnimal.save();
-               }
-               else {
-                   EndangeredAnimal endangeredAnimal= new EndangeredAnimal(name,null,null);
-                   endangeredAnimal.save();
-               }
+            boolean strange = request.queryParams("strange") != null;
+            if(strange) {
+                String health = request.queryParams("health");
+                String age = request.queryParams("age");
+                StrangeAnimal strangeAnimal = new StrangeAnimal(name, health, age);
+                strangeAnimal.save();
+                model.put("name", name);
+                model.put("health",health);
+                model.put("age",age);
+            }
+            else {
+                StrangeAnimal strangeAnimal= new StrangeAnimal(name,null,null);
+                strangeAnimal.save();
+                model.put("name", name);
+            }
             return new ModelAndView(model, "new-animal.hbs");
         }, new HandlebarsTemplateEngine());
 
 
-          // list all animals
+        // list all animals
         get("/animals", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            List<EndangeredAnimal> endangeredAnimals = EndangeredAnimal.all();
-            model.put("animals", endangeredAnimals);
+            List<StrangeAnimal> strangeAnimals = StrangeAnimal.all();
+            model.put("animals", strangeAnimals);
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -61,22 +65,22 @@ public class App {
         post("/new-sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String animalName=request.queryParams("animalName");
-            String location=request.queryParams("sightLocation");
-            String rangerName=request.queryParams("rangerName");
-            Sightings newSightings= new Sightings(animalName,location,rangerName);
-            newSightings.save();
-            model.put("animalName",newSightings.getAnimalName());
-            model.put("location",newSightings.getLocation());
-            model.put("rangerName",newSightings.getRangerName());
-            model.put("Sightings",newSightings);
+            String sightLocation=request.queryParams("sightLocation");
+            String ranger=request.queryParams("ranger");
+            Sight newSight= new Sight(animalName,sightLocation,ranger);
+            newSight.save();
+            model.put("animalName",newSight.getAnimalName());
+            model.put("sightLocation",newSight.getSightLocation());
+            model.put("ranger",newSight.getRanger());
+            model.put("Sight",newSight);
             return new ModelAndView(model, "new-sighting.hbs");
         }, new HandlebarsTemplateEngine());
 
         // list all sightings
         get("/sightings", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            List<Sightings> sightings = Sightings.all();
-            model.put("sightings", sightings);
+            List<Sight> sight = Sight.all();
+            model.put("sight", sight);
             return new ModelAndView(model, "sightings.hbs");
         }, new HandlebarsTemplateEngine());
 

@@ -1,0 +1,12 @@
+{{#partial "content"}}
+    <h3>All Animals </h3>
+    {{if animals}}
+        {{#each animals }}
+            <div class="container" >
+
+            <p>{{ name }} </p><br>
+            </div>
+        {{/each}}
+    {{else}}
+{{/partial}}
+{{>layout.hbs}}
